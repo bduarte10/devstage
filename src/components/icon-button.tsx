@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-empty-object-type */
-import { ComponentProps } from "react";
+import type { ComponentProps } from 'react'
 
-interface IconButtonProps extends ComponentProps<"button"> {}
+interface IconButtonProps extends ComponentProps<'button'> {}
 
 export function IconButton(props: IconButtonProps) {
   return (
@@ -9,5 +8,5 @@ export function IconButton(props: IconButtonProps) {
       className="p-1.5 bg-gray-500 text-blue font-semibold rounded-md cursor-pointer transition-colors duration-300 hover:bg-blue hover:text-gray-900"
       {...props}
     />
-  );
+  )
 }
